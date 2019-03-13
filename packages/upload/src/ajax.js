@@ -34,6 +34,7 @@ export default function upload(option) {
   }
 
   const xhr = new XMLHttpRequest();
+  xhr.timeout = 3000000;
   const action = option.action;
 
   if (xhr.upload) {
